@@ -1,0 +1,36 @@
+.button {
+  display: inline-block;
+  border-radius: 23px;
+  background-color: #ffffff;
+  margin-top: 32px;
+  padding: 11px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #212121;
+  letter-spacing: 3.6px;
+}
+.button img {
+  /* margin-left: 20px; */
+}
+.button-white:hover {
+  box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+}
+.button-white:active {
+  box-shadow: none;
+  position: relative;
+  top: 2px;
+}
+.button-shadow {
+  box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+}
+.button-shadow:hover {
+  box-shadow: 0 4px 7px 1px rgba(33, 33, 33, 0.35);
+}
+.button-shadow:active {
+  box-shadow: none;
+  position: relative;
+  top: 3px;
+}

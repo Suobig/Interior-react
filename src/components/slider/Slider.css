@@ -1,0 +1,104 @@
+.slider {
+  background-image: url("/img/slider-img.jpg");
+  height: 800px;
+  padding: 0 98px;
+  position: relative;
+}
+.slider-content {
+  padding-top: 283px;
+}
+.slider-flex {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.slider-tag {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #43a047;
+  letter-spacing: 1.8px;
+}
+.slider-name {
+  color: #212121;
+  font-size: 62px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-top: 22px;
+  margin-left: 8px;
+  letter-spacing: -2.2px;
+  position: relative;
+}
+.highlight-trending::before {
+  content: "Trending";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #43a047;
+  letter-spacing: 1.8px;
+  position: absolute;
+  bottom: 70px;
+  left: 5px;
+}
+.highlight-hot::before {
+  content: "Hot Deal";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e53935;
+  letter-spacing: 1.8px;
+  position: absolute;
+  bottom: 70px;
+  left: 5px;
+}
+.highlight-exclusive::before {
+  content: "Exclusive";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1e88e5;
+  letter-spacing: 1.8px;
+  position: absolute;
+  bottom: 70px;
+  left: 5px;
+}
+.slider-details {
+  color: #6c6c6c;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 34px;
+  width: 458px;
+}
+.slider-buttons {
+  list-style: none;
+  align-self: flex-end;
+  display: flex;
+  position: absolute;
+  bottom: 19px;
+  width: 85.65%;
+  justify-content: center;
+  align-items: center;
+}
+.slider-button {
+  background-color: #212121;
+  opacity: 0.2;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.slider-active {
+  height: 40px;
+  width: 40px;
+  opacity: 1;
+}
+.slider-button:not(.slider-active):hover {
+  height: 35px;
+  width: 35px;
+}
+.slider-button:not(.slider-active):active {
+  opacity: .4;
+}
+.hidden {
+  visibility: hidden;
+}

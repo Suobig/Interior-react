@@ -3,7 +3,7 @@
   border-radius: 23px;
   background-color: #ffffff;
   margin-top: 32px;
-  padding: 11px 20px;
+  padding: 11px 31px;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
@@ -12,8 +12,32 @@
   color: #212121;
   letter-spacing: 3.6px;
 }
-.button img {
-  /* margin-left: 20px; */
+.button-round {
+  padding: 11px 17px 11px 13px;
+}
+.button-text {
+  margin-right: 8px;
+}
+.button-round-text {
+  margin-right: 0;
+}
+.button-arrow {
+  border: solid #212121;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 2px;
+}
+.button-round-arrow {
+  border: solid #212121;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  margin: 2px;
+}
+.button-arrow-right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 .button-white:hover {
   box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);

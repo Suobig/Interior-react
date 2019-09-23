@@ -1,4 +1,7 @@
 import React from 'react';
+import {Button, buttonTypes, buttonShapes} from '../button/Button';
+
+import './Item.css'
 
 const itemTypes = {
   itemSmall: "item-small",
@@ -6,8 +9,8 @@ const itemTypes = {
 }
 
 const overlayItemMapping = {
-  "item-small": "overlay-small",
-  "item-large": "overlay-large"
+  "item-small": "item-overlay-small",
+  "item-large": "item-overlay-large"
 }
 
 function Item({type, image, title, text, link}) {
@@ -15,14 +18,17 @@ function Item({type, image, title, text, link}) {
 
   return (
     <div className={"item " + type}>
-    <img src="img/products/product-1.jpg" alt="Product 1" />
-    <div className={"focus " + overlayType}>
-      <a href="products/fishnet-chair.html" className="overlay-go shadow-button">
-        <img src="img/arrow-med.jpg" alt="Arrow right" />
-      </a>
-      <h3 class="overlay-title">Fishnet Chair</h3>
-      <p class="overlay-text">
-        Seat and back with upholstery made of cold cure foam.
+    <img src={image} alt="Product 1" />
+    <div className={"item-overlay " + overlayType}>
+      <Button 
+        type={buttonTypes.buttonShadow}
+        shape={buttonShapes.buttonRound}
+        text=""
+        link={link}
+      />
+      <h3 className="item-overlay-title">{title}</h3>
+      <p className="item-overlay-text">
+        {text}
       </p>
     </div>
   </div>

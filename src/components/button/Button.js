@@ -7,12 +7,20 @@ const buttonTypes = {
   buttonWhite: "button-white",
 }
 
-function Button({type, text, link}) {
+const buttonShapes = {
+  buttonLong: "button",
+  buttonRound: "button-round"
+}
+
+function Button({type, shape, text, link}) {
+  const textType = shape + "-text";
+  const arrowType = shape + "-arrow";
+
   return (
-    <a className={"button " + type} href={link}>
-      {text}<img src={process.env.PUBLIC_URL + "/img/arrow-small.png"} alt="Arrow right" />
+    <a className={`button ${shape} ${type}`} href={link}>
+      <span className={textType + "  button-text"}>{text}</span><span className={arrowType + " button-arrow-right"}></span>
     </a>
   )
 }
 
-export {Button, buttonTypes};
+export {Button, buttonTypes, buttonShapes};

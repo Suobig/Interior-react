@@ -1,7 +1,7 @@
 import React from  'react';
 import "./Slider.css";
 
-import {Button, buttonTypes} from '../button/Button';
+import {Button, buttonTypes, buttonShapes} from '../button/Button';
 
 const sliderTypes = {
   highlightTrending: "highlight-trending",
@@ -25,7 +25,8 @@ function Slider({ type, name, details, link}) {
         <p className="slider-details">{details}</p>
         <Button
           type={buttonTypes.buttonShadow}
-          text="Order Us "
+          shape={buttonShapes.buttonLong}
+          text="Order Us"
           link={link}
         />
         { carouselButtons } 

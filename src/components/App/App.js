@@ -11,7 +11,7 @@ function App() {
     {
       id: 1,
       type: itemTypes.itemSmall,
-      image: process.env.PUBLIC_URL + "/img/products/product-1.jpg",
+      image: process.env.PUBLIC_URL + "/img/products/small/product-1.jpg",
       title:"Fishnet Chair1",
       text: "Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black",
       link: "./",
@@ -19,7 +19,7 @@ function App() {
     {
       id: 2,
       type: itemTypes.itemSmall,
-      image: process.env.PUBLIC_URL + "/img/products/product-2.jpg",
+      image: process.env.PUBLIC_URL + "/img/products/small/product-2.jpg",
       title:"Fishnet Chair2",
       text: "Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black",
       link: "./",
@@ -27,7 +27,7 @@ function App() {
     {
       id: 3,
       type: itemTypes.itemSmall,
-      image: process.env.PUBLIC_URL + "/img/products/product-3.jpg",
+      image: process.env.PUBLIC_URL + "/img/products/small/product-8.jpg",
       title:"Fishnet Chair3",
       text: "Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black",
       link: "./",
@@ -35,7 +35,7 @@ function App() {
     {
       id: 4,
       type: itemTypes.itemSmall,
-      image: process.env.PUBLIC_URL + "/img/products/product-4.jpg",
+      image: process.env.PUBLIC_URL + "/img/products/small/product-4.jpg",
       title:"Fishnet Chair4",
       text: "Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black",
       link: "./",
@@ -45,7 +45,7 @@ function App() {
     {
       id: 5,
       type: itemTypes.itemSmall,
-      image: process.env.PUBLIC_URL + "/img/products/product-4.jpg",
+      image: process.env.PUBLIC_URL + "/img/products/small/product-3.jpg",
       title:"Fishnet Chair5",
       text: "Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black",
       link: "./",
@@ -53,7 +53,7 @@ function App() {
     {
       id: 6,
       type: itemTypes.itemSmall,
-      image: process.env.PUBLIC_URL + "/img/products/product-3.jpg",
+      image: process.env.PUBLIC_URL + "/img/products/small/product-5.jpg",
       title:"Fishnet Chair6",
       text: "Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black",
       link: "./",
@@ -61,7 +61,7 @@ function App() {
     {
       id: 7,
       type: itemTypes.itemSmall,
-      image: process.env.PUBLIC_URL + "/img/products/product-2.jpg",
+      image: process.env.PUBLIC_URL + "/img/products/small/product-6.jpg",
       title:"Fishnet Chair7",
       text: "Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black",
       link: "./",
@@ -69,7 +69,7 @@ function App() {
     {
       id: 8,
       type: itemTypes.itemSmall,
-      image: process.env.PUBLIC_URL + "/img/products/product-1.jpg",
+      image: process.env.PUBLIC_URL + "/img/products/small/product-7.jpg",
       title:"Fishnet Chair8",
       text: "Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black",
       link: "./",
@@ -107,8 +107,12 @@ function App() {
         link="/products/fishnet-chair.html"
       >
         <PromoImage 
-          src={process.env.PUBLIC_URL + "/img/slider-img.jpg"}
+          src={process.env.PUBLIC_URL + "/img/slider/slider-1.png"}
           alt="product 1"
+        />
+        <PromoImage 
+          src={process.env.PUBLIC_URL + "/img/slider/slider-2.png"}
+          alt="product 2"
         />
       </Promo>
 

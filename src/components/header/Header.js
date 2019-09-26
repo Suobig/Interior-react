@@ -14,10 +14,13 @@ function Header() {
           <li><a className="nav-item" href="./">history</a></li>
           <li><a className="nav-item" href="./">showroom</a></li>
           <li><a className="nav-item" href="contact.html">contact</a></li>
+          <li>
+            <a href="./" className="nav-item__search">
+              <span className="fas fa-search"></span>
+            </a>
+          </li>
         </ul>
-        <a href="./" className="search">
-          <img src={process.env.PUBLIC_URL + "/img/search.png"} alt="search" />
-        </a>
+        
       </div>
     </div>
   )

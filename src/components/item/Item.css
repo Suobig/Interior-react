@@ -5,6 +5,7 @@
 .item-small {
   width: 270px;
   min-height: 270px;
+  margin: 0 15px;
 }
 
 .item-large {

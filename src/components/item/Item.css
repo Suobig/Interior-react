@@ -5,13 +5,13 @@
 .item-small {
   width: 270px;
   min-height: 270px;
-  margin: 30px 15px;
+  margin: 15px 15px;
 }
 
 .item-large {
   width: 370px;
   min-height: 370px;
-  margin: 30px 15px;
+  margin: 15px 15px;
 }
 
 .item-overlay {

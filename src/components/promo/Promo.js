@@ -10,11 +10,11 @@ export const promoTypes = {
 }
 
 export const promoSizes = {
-  sizeStandard: "promo",
-  sizeSemi: "promo promo-semi"
+  sizeLarge: "promo promo-large",
+  sizeSmall: "promo promo-small"
 }
 
-export function Promo({type, size=promoSizes.sizeStandard, name, details, link, children}) {
+export function Promo({type, size, name, details, link, styles, children}) {
   const [currentIndex, setIndex] = useState(0);
   
   const images = React.Children.toArray(children);
@@ -50,7 +50,7 @@ export function Promo({type, size=promoSizes.sizeStandard, name, details, link, 
   const activeImage = images[currentIndex];
 
   return (
-    <div className={size}>
+    <div className={size} style={styles}>
       {activeImage}
       <div className="promo__content">
         <h2 className={`promo__name ${type}`}>{name}</h2>

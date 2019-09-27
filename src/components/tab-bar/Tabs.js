@@ -1,18 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {buttonShapes, buttonTypes, Button} from '../button/Button';
 import "./Tabs.css";
 
 export function TabBar({children})  {
-  
+  const [activeIndex, setActive] = useState(0);
+  const handleClick = (index) => setActive(index);
+
+  const tabControls = children[0];
+  const tabPanelList = children[1];
   return (
     <div className="tab-bar">
-      {children}
+      <TabControls
+        activeIndex={activeIndex}
+        onClick={handleClick}
+        forwardLink={tabControls.props.forwardLink}
+        children={tabControls.props.children}
+      />
+      <TabPanelList 
+        activeIndex={activeIndex}
+        children={tabPanelList.props.children}
+      />
     </div>
   )
 }
 
+
+
 export function TabControls({activeIndex, onClick, forwardLink, children}) {
-  const tabs = children.map((tab, index) => {
+
+  const tabs = React.Children.map(children, (tab, index) => {
     const tabClick = () => onClick(index);
     return (
       <Tab
@@ -43,7 +59,8 @@ export function Tab({isActive, onClick, children}) {
 }
 
 export function TabPanelList({activeIndex, children}) {
-  const tabPanel = children[activeIndex];
+  const childrenArray = React.Children.toArray(children);
+  const tabPanel = childrenArray[activeIndex];
   return tabPanel;
 }
 

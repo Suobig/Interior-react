@@ -2,3 +2,8 @@
   width: 1366px;
   margin: 0 auto;
 }
+
+.flex-container {
+  margin-top: 2rem;
+  display: flex;
+}

@@ -3,13 +3,18 @@ import "./Promo.css";
 
 import {Button, buttonTypes, buttonShapes} from '../button/Button';
 
-const promoTypes = {
+export const promoTypes = {
   highlightTrending: "promo__highlight-trending",
   highlightHot: "promo__highlight-hot",
   highlightExclusive: "promo__highlight-exclusive",
 }
 
-function Promo({type, name, details, link, children}) {
+export const promoSizes = {
+  sizeStandard: "promo",
+  sizeSemi: "promo promo-semi"
+}
+
+export function Promo({type, size=promoSizes.sizeStandard, name, details, link, children}) {
   const [currentIndex, setIndex] = useState(0);
   
   const images = React.Children.toArray(children);
@@ -35,21 +40,17 @@ function Promo({type, name, details, link, children}) {
     const classes = "promo__button " + (index === currentIndex ? "promo__button-active" : "");
     const indexedHandleClick = () => handleClick(index);
     return <div key={index} className={classes} onClick={indexedHandleClick}><span className="hidden">Button</span></div>
-  })
-
-  console.log({buttons, imagesCount});
+  });
 
   const carouselButtons = 
       <div className="promo__buttons">
         { imagesCount > 1 ? buttons : null }
       </div>
 
-  console.log(carouselButtons);
-
   const activeImage = images[currentIndex];
 
   return (
-    <div className="promo">
+    <div className={size}>
       {activeImage}
       <div className="promo__content">
         <h2 className={`promo__name ${type}`}>{name}</h2>
@@ -66,10 +67,8 @@ function Promo({type, name, details, link, children}) {
   )
 }
 
-function PromoImage({src, alt}) {
+export function PromoImage({src, alt}) {
   return (
     <img className="promo__image" src={src} alt={alt} />
   )
 }
-
-export {promoTypes, Promo, PromoImage};

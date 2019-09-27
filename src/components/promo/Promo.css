@@ -1,8 +1,12 @@
 .promo {
-  height: 800px;
-  padding: 0 98px;
+  min-height: 800px;
   position: relative;
 }
+
+.promo-semi {
+  width: 50%;
+}
+
 .promo__image {
   position: absolute;
   left: 0;
@@ -13,6 +17,7 @@
 }
 .promo__content {
   padding-top: 283px;
+  margin-left: 7%;
 }
 .promo__tag {
   font-size: 18px;

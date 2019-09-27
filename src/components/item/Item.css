@@ -5,12 +5,13 @@
 .item-small {
   width: 270px;
   min-height: 270px;
-  margin: 0 15px;
+  margin: 30px 15px;
 }
 
 .item-large {
   width: 370px;
   min-height: 370px;
+  margin: 30px 15px;
 }
 
 .item-overlay {
@@ -31,6 +32,9 @@
 }
 .item-overlay-small {
   min-height: 270px;
+}
+.item-overlay-large {
+  min-height: 370px;
 }
 .item:hover .item-overlay {
   display: flex;

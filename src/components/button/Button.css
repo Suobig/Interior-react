@@ -11,6 +11,9 @@
   color: #212121;
   letter-spacing: 3.6px;
 }
+.button:focus {
+  outline: none;
+}
 .button-round {
   padding: 11px 17px 11px 13px;
 }

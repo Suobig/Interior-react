@@ -1,0 +1,137 @@
+footer {
+  background-color: #f7f7f7;
+  padding: 120px 97px 38px 99px;
+}
+.footer__container {
+  display: flex;
+  margin-bottom: 59px;
+}
+.footer__container > :not(:first-child)  {
+  margin-left: 75px;
+}
+.footer__info {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footer__phone {
+  margin-top: 20px;
+}
+.footer__links {
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer__links a {
+  display: block;
+  width: 50%;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.86;
+  letter-spacing: 0.7px;
+  color: #212121;
+  text-transform: uppercase;
+}
+.footer__other {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer section > h2 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  color: #6c6c6c;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+footer section > p {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  color: #212121;
+}
+#footer__input__email {
+  display: block;
+  box-sizing: border-box;
+  width: 370px;
+  height: 48px;
+  border: solid 1px #d9dee1;
+  margin-top: 26px;
+  padding-left: 19px;
+  padding-right: 40px;
+}
+.footer__feedback form {
+  position: relative;
+}
+.footer__feedback label {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  color: #212121;
+}
+.fa-telegram-plane {
+  position: absolute;
+  color: #6c6c6c;
+  font-size: 21px;
+  bottom: 15px;
+  right: 14px
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+.footer__social a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  color: #6c6c6c;
+  font-size: 28px;
+}
+.footer__social :not(:first-child) {
+  margin-left: 5px;
+}
+.fa-facebook:hover {
+  color: #4267b2;
+}
+.fa-facebook:active {
+  color: #2F4A80;
+}
+.fa-twitter:hover {
+  color: #38A1F3;
+}
+.fa-twitter:active {
+  color: #1D5580;
+}
+.fa-google-plus:hover {
+  color: #dd4b39;
+}
+.fa-google-plus:active {
+  color: #802C21;
+}
+.fa-pinterest:hover {
+  color: #bd081c;
+}
+.fa-pinterest:active {
+  color: #800513;
+}
+.footer__other p {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #6c6c6c;
+}
+.footer__other p a {
+  text-decoration: none;
+  outline: none; 
+  color: #6c6c6c;
+}
+
+

@@ -39,6 +39,9 @@
   border-bottom-color: #ccc;
   color: #555;
 }
+.nav-item:focus {
+  outline: none;
+}
 .nav-item:not(.nav-active):active {
   border-bottom-color: #aaa;
   color: #333;
@@ -50,4 +53,7 @@
   height: 10px;
   line-height: 14px;
   color: #8c8c8c;
+}
+.nav-item__search:focus {
+  outline: none;
 }

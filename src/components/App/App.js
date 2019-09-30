@@ -4,6 +4,7 @@ import {Promo, PromoImage, promoSizes, promoTypes} from '../promo/Promo';
 import {Item, itemTypes} from '../item/Item';
 import {TabBar, Tab, TabControls, TabPanel, TabPanelList} from '../tab-bar/Tabs';
 import Mobile from "../mobile/Mobile";
+import Footer from '../footer/Footer';
 
 import './App.css';
 
@@ -247,6 +248,7 @@ function App() {
         </div>  
       </div>
       <Mobile />
+      <Footer />
     </div>
   );
 }

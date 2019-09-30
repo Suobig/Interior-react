@@ -138,6 +138,3 @@
 .promo__button:not(.promo__button-active):active {
   opacity: .4;
 }
-.hidden {
-  visibility: hidden;
-}

@@ -16,3 +16,8 @@
   margin: 0 98px;
 }
 
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+

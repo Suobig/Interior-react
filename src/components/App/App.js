@@ -3,6 +3,7 @@ import Header from '../header/Header';
 import {Promo, PromoImage, promoSizes, promoTypes} from '../promo/Promo';
 import {Item, itemTypes} from '../item/Item';
 import {TabBar, Tab, TabControls, TabPanel, TabPanelList} from '../tab-bar/Tabs';
+import Mobile from "../mobile/Mobile";
 
 import './App.css';
 
@@ -243,8 +244,9 @@ function App() {
         </div>
         <div className="flex-container flex-wrap">
           {listToItems(featureItems)}
-        </div>
+        </div>  
       </div>
+      <Mobile />
     </div>
   );
 }

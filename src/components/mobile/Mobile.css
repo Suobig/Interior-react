@@ -1,0 +1,49 @@
+.mobile {
+  box-sizing: border-box;
+  background-image: url("/img/contact.png");
+  width: 100%;
+  min-height: 516px;
+  padding-top: 160px;
+  padding-right: 50%;
+}
+
+.mobile__content {
+  position: relative;
+  margin-left: 100px;
+}
+
+.mobile__content h2 {
+  margin-left: 5px;
+  font-family: Montserrat, sans-serif;
+  font-size: 62px;
+  font-weight: 100;
+  color: #212121;
+  text-transform: uppercase;
+}
+
+.mobile__content::before {
+  position: absolute;
+  top: -28px;
+  content: "Mobile App";
+  color: #6c6c6c;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mobile__content p {
+  margin-top: 26px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.mobile__buttons {
+  margin-top: 33px;
+  display: flex;
+}
+
+.mobile__google-play {
+  margin-left: 10px;
+}
